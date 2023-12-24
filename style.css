@@ -1,0 +1,267 @@
+* {
+    font-family: 'Math', 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+@media (orientation: portrait) {
+    #sections {
+        display: none;
+    }
+}
+
+#brandname {
+    z-index: 5;
+    height: 1.7rem;
+    position: fixed;
+    top: 1.3rem;
+    left: 5rem;
+}
+
+
+#sections ul {
+    z-index: 5;
+    height: 1.7rem;
+    position: fixed;
+    top: 1.3rem;
+    right: 3rem;
+}
+
+
+.upper {
+    height: 5px;
+    width: 100vw;
+    background: linear-gradient(72deg, #0050ff, #00fff3);
+    animation-name: rotateColors;
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation-duration: 5s; /* Adjust the duration to your preference */
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+@keyframes rotateColors {
+    0% {
+        background: linear-gradient(72deg, #0050ff, #00fff3, #00fff3);
+    }
+    25% {
+        background: linear-gradient(72deg, #0050ff, #0050ff, #00fff3);
+    }
+    50% {
+        background: linear-gradient(72deg, #00fff3, #0050ff, #0050ff );
+    }
+    75% {
+        background: linear-gradient(72deg, #00fff3, #00fff3, #0050ff);
+    }
+    100% {
+        background: linear-gradient(72deg, #0050ff, #00fff3);
+    }
+}
+
+
+.sidebar1 ul li{
+    margin: 30px;
+    list-style: none;
+    z-index: 10;
+    position: fixed;
+}
+.sidebar1 ul li a{
+    font-weight: 500;
+    color: wheat;
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 20px;
+    /* margin: 50px; */
+    text-decoration: none;
+    transition-duration: 0.2s;
+    /* transition-delay: 0.3s; */
+    /* transition:ease-in-out; */
+    z-index: 10;
+    position: fixed;
+}
+
+.rightt {
+    position: relative;
+    border-radius: 12px;
+    padding: 12px 20px;
+    transition-duration: 0.5s;
+    float: right;
+    margin-right: 10px;
+    z-index: 5;
+    margin-right: 20px;
+    background-color: white;
+
+    
+}
+
+
+.material-symbols-outlined {
+    position: absolute;
+    color: wheat;
+    vertical-align: middle;
+    border-image: linear-gradient(45deg, blue, #826375);
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+.material-symbols-outlined:hover {
+    background-color: transparent;
+}
+
+.rightt:hover {
+    background: linear-gradient(72deg, #0050ff, #00fff3);
+}
+
+.navbar{
+    z-index: 5;
+    margin-top: 5px;
+    background-color: #00fff3;
+}
+
+.navbar ul li{
+    color: black;
+    font-weight: bolder;
+    display: inline-block;
+    z-index: 5;
+}
+
+.sidebar1 ul li a:hover{
+    font-weight: 500;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(245, 222, 179);
+    transform: translateX(5px) ;
+    z-index: 10;
+    
+}
+
+/* ul li:hover {
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 12px 0px 0px 12px;
+    box-sizing: content-box;
+    color: black;
+} */
+
+.menu-img {
+    cursor: pointer; /* Indicate clickability */
+    height: 1.7rem;
+    top: 15px;
+    left: 15px;
+    position: fixed;
+    transition: 0.3s;
+}
+
+.menu-img:hover {
+    filter: drop-shadow(1px 1px 1px rgb(252, 255, 156));
+}
+
+.sidebar2 {
+    z-index: 10;
+    position: fixed; /* Position sidebars for animation */
+    top: 0;
+    left: -100%; /* Initially hide both sidebars */
+    width: 93vw; /* Adjust width as needed */
+    height: 100vh; /* Full height */
+    transition: left 0.5s ease-in-out; /* Add transition for animation */
+    /* background-color: wheat; */
+    /* background: linear-gradient(72deg, #00fff3, wheat); */
+    background: linear-gradient(85deg, #000000, #626262);
+    float: left;
+    border-radius: 20px;
+}
+
+.sidebar1 {
+  position: fixed; /* Position sidebars for animation */
+  top: 0;
+  z-index: 2;
+  left: -100%; /* Initially hide both sidebars */
+  width: 90vw; /* Adjust width as needed */
+  height: 100vh; /* Full height */
+  transition: left 0.5s ease-in-out; /* Add transition for animation */
+  background: linear-gradient(72deg, #0050ff, #00fff3);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+main {
+    margin: 70px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:baseline;
+}
+
+.card {
+    margin: 20px;
+    z-index: 1;
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    background: linear-gradient(72deg, #0050ff, #00fff3);
+    padding: 5px;
+    /* opacity: 90%; */
+    
+}
+
+.card:hover {
+    transform: rotate(5deg);
+    /* perspective: 20px; */
+    /* transform: scale(1.04); */
+    opacity: 100%;
+    
+}
+.card .image {
+    z-index: 1;
+    background-color: black;
+    height: 65%;
+    border-radius:20px;
+}
+
+.cardinfo {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    height: 33%;
+    background: linear-gradient(45deg,wheat, white, wheat);
+    border-radius: 20px;
+    justify-content: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    /* margin-bottom: 2px; */
+    padding-left: 10px;
+}
+
+.view-button{
+    z-index: 1;
+    background-color: black;
+    height: 30px;
+    display: block;
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+
+}
+
+.view-button:hover{
+
+}
+
+.sidebaritems {
+    
+}
+
+
